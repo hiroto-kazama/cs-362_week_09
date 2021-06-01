@@ -5,7 +5,10 @@ def divcheck(m,n):
 
 def isLeapyear(x):
     if (divcheck(x,4)):
-        return True
+        if (divcheck(x,100)):
+            return False
+        else:
+            return True
     else:
         return False
         
